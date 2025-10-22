@@ -94,7 +94,6 @@ header {
 
         .hero-image-wrapper {
             position: relative;
-
             width: clamp(250px, 80vw, 888px);
 
             img {
@@ -200,7 +199,6 @@ main {
                 height: 404px;
                 padding: 16px 16px;
                 box-shadow: 0px 8px 20px 0px #37366433;
-
                 overflow: hidden;
                 background-color: #ffffff;
 
@@ -220,7 +218,6 @@ main {
                     height: 36px;
                     margin-top: 8px;
                     opacity: 1;
-
                     line-height: 36px;
                     letter-spacing: 0%;
                 }
@@ -229,7 +226,6 @@ main {
                     font-family: "Urbanist";
                     font-weight: 600;
                     font-style: SemiBold;
-
                     line-height: 32px;
                     letter-spacing: 0%;
                 }
@@ -241,28 +237,20 @@ main {
     .choose-us {
         margin: 100px auto 0 auto;
 
-
         .content-wrapper {
-
             max-width: 879px;
             margin: 0 auto;
-
 
             h1 {
                 font-family: "Gilda Display", serif;
                 font-weight: 400;
-                font-style: Regular;
                 font-size: 72px;
-
                 line-height: 84px;
-                letter-spacing: 0%;
                 text-align: center;
-
             }
 
             p {
                 text-align: center;
-
                 font-family: "Urbanist" serif;
                 font-weight: 500;
                 font-style: Medium;
@@ -271,81 +259,143 @@ main {
                 line-height: 32px;
                 letter-spacing: 0%;
                 text-align: center;
+            }
+        }
 
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            margin-bottom: 100px;
+            justify-content: center;
+            gap: 28px;
+
+            .choose-card {
+                max-width: 381.3333435058594px;
+                height: 400px;
+                opacity: 1;
+                padding-top: 40px;
+                padding-right: 32px;
+                padding-bottom: 48px;
+                padding-left: 32px;
+                box-shadow: 10px 26px 150px 0px #4343641A;
+
+                h2 {
+                    font-family: "Gilda Display", serif;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 40px;
+                    line-height: 62px;
+                    letter-spacing: 0%;
+                }
+
+                p {
+                    padding-top: 20px;
+                    font-family: "Urbanist" serif;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 18px;
+                    text-decoration: none;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                }
+
+                a {
+                    margin-top: 80px;
+                    display: block;
+                    text-align: right;
+                    color: #25A59E;
+                    font-family: "Gilda Display", serif;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 20px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .choose-card:nth-child(2) {
+            background-color: #25A59E;
+            color: #FFFFFF;
+
+            a {
+                color: #FFFFFF;
             }
         }
     }
 
-    .cards-container {
+    .promo-section {
         display: flex;
-        flex-wrap: wrap;
-        margin-top: 60px;
         margin-bottom: 100px;
 
-        justify-content: center;
-        gap: 28px;
-
-        .choose-card {
-            width: 381.3333435058594px;
-            height: 400px;
-
-            opacity: 1;
-            padding-top: 40px;
-            padding-right: 32px;
-            padding-bottom: 48px;
-            padding-left: 32px;
-
-            box-shadow: 10px 26px 150px 0px #4343641A;
+        .promo-wrapper {
+            margin-top: 10px;
 
 
-            h2 {
-
+            h1 {
                 font-family: "Gilda Display", serif;
                 font-weight: 400;
-                font-style: Regular;
-                font-size: 40px;
-
-                line-height: 62px;
-                letter-spacing: 0%;
-
+                font-size: 72px;
+                line-height: 84px;
+                color: #262626;
             }
 
             p {
-                padding-top: 20px;
-                font-family: "Urbanist" serif;
-                font-weight: 400;
-                font-style: Regular;
+                font-family: Urbanist;
+                font-weight: 500;
                 font-size: 18px;
-                text-decoration: none;
                 line-height: 32px;
-                letter-spacing: 0%;
-
             }
 
-            a {
-                margin-top: 80px;
-                display: block;
-                text-align: right;
-                color: #25A59E;
-                font-family: "Gilda Display", serif;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 20px;
+            .promo-actions {
+                .btn-primary {
+                    width: 141;
+                    height: 54;
+                    padding-top: 16px;
+                    padding-right: 32px;
+                    padding-bottom: 16px;
+                    padding-left: 32px;
+                    border: none;
+                    opacity: 1;
+                    background-color: #25A59E;
+                    color: #FFFFFF;
+                    font-family: Urbanist;
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 18px;
 
-                line-height: 100%;
-                letter-spacing: 0%;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: right;
 
+                }
+
+                .btn-secondary {
+                    width: 115;
+                    height: 26;
+                    color: #333333CC;
+
+
+
+
+                }
             }
+        }
 
-
-
+        img {
+            margin-top: 100px;
+            width: 658px;
+            height: 485px;
         }
     }
 
-    .choose-card:nth-child(2) {
-        background-color: #25A59E;
-        color: #FFFFFF;
-    }
+
+
+
+
 
 }
 
@@ -421,7 +471,11 @@ main {
                 .destination-card {
                     flex: 0 0 100%;
                     scroll-snap-align: center;
-
+                    box-shadow:
+                        10px 26px 150px 0px #4343641A,
+                        /* الظل الأساسي يمين وتحت */
+                        -10px 26px 150px 0px #4343641A;
+                    /* الظل الثاني يسار وتحت */
                     text-align: center;
                 }
 
@@ -429,6 +483,35 @@ main {
                     display: none;
                 }
             }
+        }
+
+        .promo-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .promo-wrapper {
+                width: 100%;
+                height: auto;
+                        margin-top: 0px;
+                      .promo-actions {
+                    .btn-primary {
+                        display: none;
+                    }
+
+                    .btn-secondary {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+        margin-top: 28px;
+                width: 100%;
+                height: auto;
+            }
+
         }
     }
 }
@@ -450,7 +533,7 @@ main {
             }
 
             .hero-info {
-                padding: 20px;
+                padding: 20px;letter-spacing: 0%;
                 gap: 12px;
 
                 p {
@@ -474,16 +557,94 @@ main {
             }
 
             .destination-grid {
-                width: min(335px, 89.33%);
+                width: 100%;
 
                 .destination-card {
                     height: max(404px, 10%);
 
                     img {
-                        width: min(311px, 92.8%);
+                        width: 100%
                     }
                 }
             }
         }
+
+        .choose-us {
+            .content-wrapper {
+                h1 {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+
+                p {
+                    padding-top: 12px;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .cards-container {
+                gap: 40px;
+
+                .choose-card {
+                    width: min(335px, 89.33%);
+                    height: 254;
+                    padding-top: 28px;
+                    padding-right: 20px;
+                    padding-bottom: 32px;
+                    padding-left: 20px;
+                    gap: 40px;
+                    opacity: 1;
+
+                    h2 {
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 28px;
+                        line-height: 40px;
+                        letter-spacing: 0%;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 23px;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+
+
+
+        .promo-section {
+            .promo-wrapper {
+        
+                width: min(335px, 89.33%);
+
+                h1 {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+
+                p {
+font-size: 16px;
+line-height: 24px;
+
+
+            }
+          
+            }
+                img {
+                    margin-top: 28px;
+                    width: min(335px, 89.33%);
+
+                }
+
+            }
+        
+
     }
 }
